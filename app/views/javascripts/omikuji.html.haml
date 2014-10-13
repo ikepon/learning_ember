@@ -1,0 +1,8 @@
+%h1 おみくじ
+
+%input{ type: 'button', value: 'あなたの運勢は？', onclick: 'getOmikuji();'}
+%p
+  あなたの運勢は
+  %span#result
+
+= javascript_include_tag 'jstest/omikuji'
