@@ -1,0 +1,14 @@
+%h1 日付計算の練習
+%p
+  誕生日：
+  %input#birthday{type: 'text', name: 'birthday', value: '1984-12-05'}
+%p
+  %input{type: 'button', value: '計算！', onclick: 'getAge();'}
+
+%p
+  生まれてから
+  %span#daysPast ???
+  日経過していて、だいたい
+  %span#age ???
+  歳です。
+= javascript_include_tag 'jstest/birthday'
